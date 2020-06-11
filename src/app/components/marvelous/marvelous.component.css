@@ -1,0 +1,38 @@
+.mv-box{
+  width: 100vw;
+}
+.tx-box{
+  width: 90vw;
+  margin: 25px auto;
+}
+.mv-title{
+  font-size: 32px;
+  font-family: 微软雅黑;
+  color: rgb(0, 131, 255);
+}
+.mv-article{
+  text-align: left;
+  line-height: 180%; 
+  font-family: 微软雅黑; 
+  font-size: 14px; 
+  color: rgb(102, 102, 102);
+  padding: 0 20px;
+}
+.mv-article-box{
+  overflow-wrap: break-word;
+       padding: 0px; 
+       border-color: transparent; 
+       border-width: 0px; 
+       width: 613px; 
+       display: block;
+       padding-left: 15px;
+}
+.mv-article-box-m{
+  overflow-wrap: break-word;
+       padding: 0px 15px; 
+       border-color: transparent; 
+       border-width: 0px; 
+       /* width: 75vw;  */
+       display: block;
+
+}

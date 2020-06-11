@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>Marvelous</title>
+
+
+</head>
+<body>
+
+<section id = 'title-image' [ngClass]="{'et-hero-tabs': true,'title-image-mb': agent == 1,'title-image-pc': agent == 2}">
+  <h1>Marvelous</h1>
+  <h3>每天你都有机会跟别人擦肩而过，有些人可能会变成你的朋友或者知己</h3>
+  
+	<div class="et-hero-tabs-container">
+		<a class="et-hero-tab" href="#tab-marvelous">Marvelous</a>
+		<a class="et-hero-tab" href="#tab-act">Activity</a>
+		<a class="et-hero-tab" href="#tab-won">Past Wonderful</a>
+		<a class="et-hero-tab" href="#tab-join">Join Us</a>
+		<a class="et-hero-tab" href="#tab-other">Other</a>
+		<span class="et-hero-tab-slider"></span>
+	</div>
+	
+</section>
+
+<!-- Main -->
+<main class="et-main">
+  <section class="et-slide row" id="tab-marvelous">
+    <h1 style="margin-top: 20px;">Marvelous</h1>
+    <app-marvelous [agent]="agent"></app-marvelous>
+  </section>
+  <section class="et-slide row" id="tab-act">
+    <h1>Activity</h1>
+    <app-activity></app-activity>
+  </section>
+  <section class="et-slide row" id="tab-won">
+    <h1>Past Wonderful</h1>
+    <app-wonderful>
+    </app-wonderful>
+  </section>
+  <section class="et-slide row" id="tab-join">
+    <h1>Join Us</h1>
+    <app-join></app-join>
+  </section>
+  <section class="et-slide row" id="tab-other">
+    <h1>Other</h1>
+    <app-other></app-other>
+  </section>
+</main>
+
+<div id='go-top' (click)="goTop()">
+  <span class="glyphicon glyphicon-arrow-up" aria-hidden="true">
+  </span>
+</div>
+</body>
+</html>
