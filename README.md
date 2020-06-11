@@ -25,3 +25,20 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Get start
+	1)install nodejs v12.6.0,downloap path is as follow:
+		`https://nodejs.org/en/`
+	  view nodejs version:
+		`node -v`
+	2)set registry for chinese user:
+		`npm config set registry https://registry.npm.taobao.org`
+	3)install angular:
+		`npm install -g @angular/cli@9.1.7`
+	4)view angular version:
+		`ng v`
+	5)install project dependency package
+		`npm install`
+	If the above steps are successful,run following order to start project
+		`ng serve --open`
+	
