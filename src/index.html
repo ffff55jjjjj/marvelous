@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Marvelous</title>
@@ -7,8 +8,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/layui/css/layui.css">
+  <script type="text/javascript" src="/assets/layui/layui.js"></script>
+  <script>
+    layui.use(['layer', 'form'], function () {
+      var layer = layui.layer
+        , form = layui.form;
+
+      //layer.msg('Hello World');
+    });
+  </script>
 </head>
+
 <body>
   <app-root></app-root>
 </body>
+
 </html>
