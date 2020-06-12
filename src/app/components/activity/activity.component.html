@@ -2,10 +2,9 @@
   <div class="panel panel-default tx-box">
     <div class="panel-body">
       <div class="layui-collapse">
-        <i class="layui-icon layui-icon-face-smile"></i>
-        <div class="layui-colla-item" *ngFor="let data of uiData">
+        <div class="layui-colla-item" *ngFor="let data of uiData"  (click)="showContent($event)">
           <h2 class="layui-colla-title">{{data.activity}}</h2>
-          <div class="layui-colla-content" *ngFor="let item of data.items" style="font-size: 16px;">
+          <div class="layui-colla-content act-content" *ngFor="let item of data.items" style="font-size: 16px;">
             <span>{{item.name}}</span>
             <span class="like-count">{{item.like}}</span>
             <span class="glyphicon glyphicon-heart like-icon" [id]="item.id" aria-hidden="true" (click)="iconClick($event)"></span>
