@@ -2,41 +2,16 @@
   <div class="panel panel-default tx-box">
     <div class="panel-body">
       <div class="layui-collapse">
-        <div class="layui-colla-item">
-          <h2 class="layui-colla-title">玩转桌游</h2>
-          <div class="layui-colla-content">
-            犯罪现场、狼人杀、剧本杀、马尼拉、积木大师、德州扑克、谁是卧底、真心话大冒险
+        <i class="layui-icon layui-icon-face-smile"></i>
+        <div class="layui-colla-item" *ngFor="let data of uiData">
+          <h2 class="layui-colla-title">{{data.activity}}</h2>
+          <div class="layui-colla-content" *ngFor="let item of data.items" style="font-size: 16px;">
+            <span>{{item.name}}</span>
+            <span class="like-count">{{item.like}}</span>
+            <span class="glyphicon glyphicon-heart like-icon" [id]="item.id" aria-hidden="true" (click)="iconClick($event)"></span>
           </div>
-        </div>
-        <div class="layui-colla-item">
-          <h2 class="layui-colla-title">周末歌神</h2>
-          <div class="layui-colla-content">KTV、街头卖唱</div>
-        </div>
-        <div class="layui-colla-item">
-          <h2 class="layui-colla-title">夏日乐悠悠</h2>
-          <div class="layui-colla-content">温泉、游泳</div>
-        </div>
-        <div class="layui-colla-item">
-          <h2 class="layui-colla-title">单身晚会</h2>
-          <div class="layui-colla-content">内容区域</div>
-        </div>
-        <div class="layui-colla-item">
-          <h2 class="layui-colla-title">吃货最爱</h2>
-          <div class="layui-colla-content">探店、聚餐、野餐、饮早茶</div>
-        </div>
-        <div class="layui-colla-item">
-          <h2 class="layui-colla-title">归也田园</h2>
-          <div class="layui-colla-content">爬山、钓鱼、乡村摄影、农家乐</div>
-        </div>
-        <div class="layui-colla-item">
-          <h2 class="layui-colla-title">清吧酒会</h2>
-          <div class="layui-colla-content">内容区域</div>
-        </div>
-        <div class="layui-colla-item">
-          <h2 class="layui-colla-title">周边自驾游</h2>
-          <div class="layui-colla-content">内容区域</div>
         </div>
       </div>
     </div>
-  </div>  
+  </div>
 </div>
