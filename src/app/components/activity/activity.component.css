@@ -14,3 +14,20 @@
 .layui-colla-item .layui-colla-content{
   text-align: left;
 }
+
+.like-count{
+  float: right;
+  width: 50px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.like-icon{
+  float: right; 
+  font-size: 25px;
+  line-height: 25px;
+}
+
+.like-icon-active{
+  color: #FF5722; 
+}
