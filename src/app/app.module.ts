@@ -10,6 +10,9 @@ import { WonderfulComponent } from './components/wonderful/wonderful.component';
 import { JoinComponent } from './components/join/join.component';
 import { OtherComponent } from './components/other/other.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
+
 
 @NgModule({
   declarations: [
@@ -25,6 +28,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    BrowserAnimationsModule,
+    MatSliderModule,
   ],
   providers: [
     HttpClient
